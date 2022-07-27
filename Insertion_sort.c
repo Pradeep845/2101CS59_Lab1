@@ -20,7 +20,7 @@ void Insertion_sort(int arr[], int size)
 int main()
 {
     int size;
-    printf("Enter size of array: ");
+    printf("\nEnter size of array: ");
     scanf("%d", &size);
     printf("Enter elements of array: ");
     int array[size];
