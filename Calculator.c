@@ -29,8 +29,13 @@ void division(long int a, long int b)
     }
     else
     {
-        printf("division by 0 ERROR");
+        printf("division by 0 ERROR\n");
     }
+}
+
+void Remainder(long int a, long int b)
+{
+    printf("Remainder when a divided by b : %d\n", a % b);
 }
 
 int main()
@@ -41,7 +46,7 @@ int main()
     long int r;
     printf("Enter second number :");
     scanf("%ld", &r);
-    printf("Enter choice of operation needed:\n1. Add\t2. Subtract\t3. Multiplication\t4. Division\n ");
+    printf("Enter choice of operation needed:\n1. Add\t2. Subtract\t3. Multiplication\t4. Division\t5. Remainder\n ");
     int n;
     scanf("%d", &n);
     if (n == 1)
@@ -59,6 +64,10 @@ int main()
     else if (n == 4)
     {
         division(t, r);
+    }
+    else if (n == 5)
+    {
+        Remainder(t, r);
     }
     else
     {
