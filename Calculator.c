@@ -13,6 +13,26 @@ void multiplication(long int a, long int b)
     printf("Product of these two numbers: %ld\n", a * b);
 }
 
+void division(long int a, long int b)
+{
+    if (b != 0)
+    {
+        if (a % b != 0)
+        {
+            float c = a / (float)b;
+            printf("Division of these two number: %f\n", c);
+        }
+        else
+        {
+            printf("Division of these two number: %ld\n", a / b);
+        }
+    }
+    else
+    {
+        printf("division by 0 ERROR");
+    }
+}
+
 int main()
 {
     printf("\nEnter first number :");
@@ -21,7 +41,7 @@ int main()
     long int r;
     printf("Enter second number :");
     scanf("%ld", &r);
-    printf("Enter choice of operation needed:\n1. Add\t2. Subtract\t3. Multiplication\n ");
+    printf("Enter choice of operation needed:\n1. Add\t2. Subtract\t3. Multiplication\t4. Division\n ");
     int n;
     scanf("%d", &n);
     if (n == 1)
@@ -35,6 +55,10 @@ int main()
     else if (n == 3)
     {
         multiplication(t, r);
+    }
+    else if (n == 4)
+    {
+        division(t, r);
     }
     else
     {
