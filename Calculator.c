@@ -8,6 +8,10 @@ void subtraction(long int a, long int b)
 {
     printf("Difference between these two numbers: %ld\n", a - b);
 }
+void multiplication(long int a, long int b)
+{
+    printf("Product of these two numbers: %ld\n", a * b);
+}
 
 int main()
 {
@@ -17,7 +21,7 @@ int main()
     long int r;
     printf("Enter second number :");
     scanf("%ld", &r);
-    printf("Enter choice of operation needed:\n 1. Add \t 2. Subtract \n");
+    printf("Enter choice of operation needed:\n1. Add\t2. Subtract\t3. Multiplication\n ");
     int n;
     scanf("%d", &n);
     if (n == 1)
@@ -27,6 +31,10 @@ int main()
     else if (n == 2)
     {
         subtraction(t, r);
+    }
+    else if (n == 3)
+    {
+        multiplication(t, r);
     }
     else
     {
